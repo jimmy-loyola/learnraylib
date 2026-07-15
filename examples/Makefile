@@ -575,7 +575,8 @@ CORE = \
     core/core_window_letterbox \
     core/core_window_should_close \
     core/core_window_web \
-    core/core_world_screen
+    core/core_world_screen \
+    core/exercises/001_shapes
 
 SHAPES = \
     shapes/shapes_ball_physics \
