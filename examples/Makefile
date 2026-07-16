@@ -579,7 +579,8 @@ CORE = \
     core/exercises/001_shapes \
     core/exercises/002_shapes_solitario \
     core/exercises/003_shapes_click \
-    core/exercises/004_shapes_click_rect_point_collision
+    core/exercises/004_shapes_click_rect_point_collision \
+    core/exercises/004_shapes_click_rect_point_collision_solitario
 
 SHAPES = \
     shapes/shapes_ball_physics \
