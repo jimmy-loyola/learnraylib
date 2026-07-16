@@ -577,7 +577,8 @@ CORE = \
     core/core_window_web \
     core/core_world_screen \
     core/exercises/001_shapes \
-    core/exercises/002_shapes_solitario 
+    core/exercises/002_shapes_solitario \
+    core/exercises/003_shapes_click
 
 SHAPES = \
     shapes/shapes_ball_physics \
