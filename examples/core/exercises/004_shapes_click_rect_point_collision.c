@@ -5,18 +5,24 @@ int main(void)
    InitWindow(800, 600, "003_shapes");
    SetTargetFPS(60);
    Color RectColor = RED;
-   while (!WindowShouldClose())
+   Rectangle rect = { 100, 100, 100, 100 };
+
+  while (!WindowShouldClose())
   {
+   Vector2 mouse_point = GetMousePosition();
    if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
    {
-    if (ColorIsEqual(RectColor, RED)) {
-	    RectColor = BLUE;
-    } else {
-	RectColor = RED;
-    }
+     if (CheckCollisionPointRec(mouse_point, rect)) {
+        if (ColorIsEqual(RectColor, RED)) {
+          RectColor = BLUE;
+        } else {
+          RectColor = RED;
+        }
+      }
    }
+
    BeginDrawing();
-   DrawRectangle(100, 100, 100, 100, RectColor);
+   DrawRectangleRec(rect, RectColor);
    EndDrawing();
   }
 }
