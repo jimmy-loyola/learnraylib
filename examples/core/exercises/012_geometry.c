@@ -2,14 +2,39 @@
 
 int main(void)
 {
-   InitWindow(800, 600, "001_shapes");
+   InitWindow(800, 600, "geometry");
    SetTargetFPS(60);
-   while (!WindowShouldClose())
+   int a = 100;
+   int b = 100;
+   int c = 100;
+   int d = 100;
+    while (!WindowShouldClose())
   {
     BeginDrawing();
-    EndDrawing(); 
+
+    while(a < 500) {
+      DrawPixel(100, a, RED);
+      a++;
+    }
+
+    while(b < 500) {
+      DrawPixel(300, b, YELLOW);
+      b++;
+    }
+
+     while(c < 300) {
+      DrawPixel(c, 500, BLUE);
+      c++;
+    }
+
+     while(d < 300) {
+      DrawPixel(d, 100, GREEN);
+      d++;
+    }
+
+
+      EndDrawing(); 
   }
-  
     return 0;
 }
 
