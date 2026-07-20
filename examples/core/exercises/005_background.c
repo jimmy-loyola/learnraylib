@@ -2,7 +2,7 @@
 
 int main(void)
 {
-   InitWindow(800, , 600"");
+   InitWindow(800, 600, "");
    SetTargetFPS(60);
    Image img = LoadImage("Background.png");
    Texture2D texture = LoadTextureFromImage(img);
