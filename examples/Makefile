@@ -583,7 +583,8 @@ CORE = \
     core/exercises/004_shapes_click_rect_point_collision_solitario \
     core/exercises/005_background \
     core/exercises/012_geometry \
-    core/exercises/013_geometry
+    core/exercises/013_geometry \
+    core/exercises/014_test_lines
 
 SHAPES = \
     shapes/shapes_ball_physics \
