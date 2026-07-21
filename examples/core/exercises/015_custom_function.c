@@ -2,41 +2,41 @@
 #include <stdio.h>
 
 void my_draw_rect(int xpos, int ypos, int width, int height, Color rect_color) {
-   int startx = xpos;
-   int starty = ypos;
 
-  DrawPixel(xpos, ypos, rect_color);
+int c = 0;
 
-  while (xpos < width) {
-    DrawPixel(xpos, ypos, rect_color);
-    xpos = xpos +1;
-  }
+while (c < width) {
+DrawPixel(xpos + c, ypos, rect_color);
+c++;
+}
 
-  printf("ciclo1 %d\n", xpos);
+c = 0;
+while (c < height) {
+DrawPixel(xpos, ypos + c, rect_color);
+c++;
+}
 
- while (ypos < height) {
-    DrawPixel(xpos, ypos, rect_color);
-    ypos = ypos +1;
-  }
+c = 0;
+while (c < width) {
+DrawPixel(xpos + c, ypos + height, rect_color);
+c++;
+}
 
-  while (xpos > startx) {
-    DrawPixel(xpos, ypos, rect_color);
-    xpos = xpos -1;
-  }
-
- while (ypos > starty) {
-    DrawPixel(xpos, ypos, rect_color);
-    ypos = ypos -1;
-  }
-
+c = 0;
+while (c < height) {
+DrawPixel(xpos + width, ypos + c, rect_color);
+c++;
+}
 }
 int main(void) {
   InitWindow(1000, 1000, "015 exercises");
   SetTargetFPS(60);
   while (!WindowShouldClose()) {
   BeginDrawing();
-  my_draw_rect(500, 600, 30, 20, BLUE);
-  EndDrawing();
+  my_draw_rect(10, 20, 100, 70, BLUE);
+  my_draw_rect(30, 120, 50, 40, YELLOW);
+  my_draw_rect(300, 310, 120, 10, GREEN);
+    EndDrawing();
   }
   return 0;
 }
