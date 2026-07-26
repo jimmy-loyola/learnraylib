@@ -14,34 +14,32 @@ void my_draw_line(int x1, int y1, int x2, int y2, Color line_color) {
   printf("deltay=%d, deltax=%d, m1=%.2f, m2=%.2f, m3=%.2f, m4=%.2f\n", deltay, deltax, m1, m2, m3, m4);
 
   if (deltax > deltay) {
-  int xs, ys;
+    int xs, ys;
+    if (x1 < x2) {
+      xs = x1;
+      ys = y1;
+    } else {
+      xs = x2;
+      ys = y2;
+    }
 
-  if (x1 < x2) {
-    xs = x1;
-    ys = y1;
-  } else {
-    xs = x2;
-    ys = y2;
-  }
-
-  float m = ys >= y1 && ys >= y2 ? m3 : m1;
+    float m = ys >= y1 && ys >= y2 ? m3 : m1;
     int x = 0;
     while (x < deltax) {
       DrawPixel(x + xs, (m * x) + ys, line_color);
       x = x + 1;
     }
   } else {
-  int xs, ys;
+    int xs, ys;
+    if (y1 < y2) {
+      xs = x1;
+      ys = y1;
+    } else {
+      xs = x2;
+      ys = y2;
+    }
 
-  if (y1 < y2) {
-    xs = x1;
-    ys = y1;
-  } else {
-    xs = x2;
-    ys = y2;
-  }
-
-  float m = xs >= x1 && xs >= x2 ? m3 : m1;
+    float m = xs >= x1 && xs >= x2 ? m3 : m1;
     int y = 0;
     while (y < deltay) {
       DrawPixel(y / m + xs, y + ys, line_color);
