@@ -586,8 +586,8 @@ CORE = \
     core/exercises/013_geometry \
     core/exercises/014_test_lines \
     core/exercises/015_custom_function \
-    core/exercises/016_line_angle \
-    core/exercises/017_lines_equations
+    core/exercises/017_lines_equations_j \
+    core/exercises/017_lines_equations_j2
 
 SHAPES = \
     shapes/shapes_ball_physics \
