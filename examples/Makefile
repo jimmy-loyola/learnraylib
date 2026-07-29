@@ -587,7 +587,15 @@ CORE = \
     core/exercises/014_test_lines \
     core/exercises/015_custom_function \
     core/exercises/017_lines_equations_j \
-    core/exercises/017_lines_equations_j2
+    core/exercises/017_lines_equations_j2 \
+    core/exercises/016_line_angle \
+    core/exercises/017_lines_equations \
+    core/exercises/018_lines \
+    core/exercises/019_lines \
+    core/exercises/020_lines \
+    core/exercises/021_colors \
+    core/exercises/022_colors
+
 
 SHAPES = \
     shapes/shapes_ball_physics \
