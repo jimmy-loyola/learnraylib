@@ -596,7 +596,8 @@ CORE = \
     core/exercises/021_colors \
     core/exercises/022_colors \
     core/exercises/023_mydrawrect \
-    core/exercises/024_fillrect
+    core/exercises/024_fillrect \
+    core/exercises/025_snake
 
 
 SHAPES = \
